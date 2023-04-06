@@ -1,19 +1,19 @@
-document.addEventListener("keydown", function(event) {
-    if (event.code === "Space") {
-        alert("Anda menekan tombol spasi!");
-    }
+document.addEventListener("keydown", function (event) {
+  if (event.code === "Space") {
+    alert("Anda telah menekan tombol spasi pada keyboard!");
+  }
 });
 
-document.addEventListener("keydown", function(event) {
-    if (event.code === "ArrowRight") {
-        document.getElementById("klikkanan").style.backgroundColor = "blue";
-    }
+document.addEventListener("keydown", function (event) {
+  if (event.code === "ArrowRight") {
+    document.getElementById("klikkanan").style.backgroundColor = "yellow";
+  }
 });
 
-document.getElementById("kliksaya").addEventListener("click", function() {
-    this.style.backgroundColor = "blue";
+document.getElementById("klikDisini").addEventListener("click", function () {
+  this.style.backgroundColor = "tomato";
 });
 
-document.getElementById("div").addEventListener("mouseover", function() {
-    alert("Anda mengarahkan cursor mouse ke elemen ini!");
+document.getElementById("div").addEventListener("mouseover", function () {
+  alert("Anda mengarahkan cursor mouse pada bagian ini!");
 });
