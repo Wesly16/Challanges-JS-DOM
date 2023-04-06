@@ -13,7 +13,7 @@ var selectedElement = document.getElementById("parent2");
 var childElements = selectedElement.childNodes;
 for (var i = 0; i < childElements.length; i++) {
   if (childElements[i].nodeName == "P") {
-    childElements[i].innerHTML = "Penambahan pada kalimat  " + (i + 1);
+    childElements[i].innerHTML = "Ada penambahan pada kalimat  " + (i + 1);
   }
 }
 
