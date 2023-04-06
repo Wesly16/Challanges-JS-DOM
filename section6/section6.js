@@ -1,5 +1,5 @@
 // mengubah warna teks
-document.getElementById("hello").style.color = "green";
+document.getElementById("hallo").style.color = "purple";
 
 // menambahkan border
 document.getElementById("image").style.border = "5px solid black";
