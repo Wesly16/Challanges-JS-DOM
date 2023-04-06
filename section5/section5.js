@@ -1,8 +1,8 @@
 // mengganti warna latar belakang
-document.getElementById("div").setAttribute("style", "background-color: red; color: white;");
+document.getElementById("div").setAttribute("style", "background-color: blue; color: white;");
 
 // mengubah input
-document.getElementById("button").setAttribute("value", "Hello World");
+document.getElementById("button").setAttribute("value", "Hallo Semuanya");
 function myfunction() {
-    document.getElementById("input").setAttribute("type", "button"); 
+  document.getElementById("input").setAttribute("type", "button");
 }
