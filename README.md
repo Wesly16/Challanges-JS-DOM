@@ -91,7 +91,7 @@ var selectedElement = document.getElementById("parent2");
 var childElements = selectedElement.childNodes;
 for(var i = 0; i < childElements.length; i++) {
 if (childElements[i].nodeName == "P") {
-childElements[i].innerHTML = "Penambahan pada kalimat " + (i+1);
+childElements[i].innerHTML = "Ada penambahan pada kalimat " + (i+1);
 }
 }
 
@@ -126,7 +126,7 @@ document.getElementById("list").appendChild(newListItem);
 ---
 
 var newImage = document.createElement("img");
-newImage.setAttribute("src", "https://res.cloudinary.com/teepublic/image/private/s--TLzsjSTQ--/t_Preview/b_rgb:36538b,c_limit,f_jpg,h_630,q_90,w_630/v1523266999/production/designs/2572232_0.jpg");
+newImage.setAttribute("src", "https://tse4.mm.bing.net/th?id=OIP.BMDq38G7vr2bYc-yft241gHaD7&pid=Api&P=0");
 document.getElementById("div").appendChild(newImage);
 
 ---
@@ -136,7 +136,7 @@ document.getElementById("div").appendChild(newImage);
 ---
 
 var newButton = document.createElement("button");
-var textNode = document.createTextNode("Klik Aku");
+var textNode = document.createTextNode("Klik Disini");
 newButton.appendChild(textNode);
 document.body.appendChild(newButton);
 
@@ -148,13 +148,13 @@ document.body.appendChild(newButton);
 
 ---
 
-## document.getElementById("div").setAttribute("style", "background-color: red; color: white;");
+## document.getElementById("div").setAttribute("style", "background-color: blue; color: white;");
 
 - Contoh 2, mengubah text input
 
 ---
 
-document.getElementById("button").setAttribute("value", "Hello World");
+document.getElementById("button").setAttribute("value", "Hallo Semuanya");
 function myfunction() {
 document.getElementById("input").setAttribute("type", "button");
 }
@@ -163,11 +163,11 @@ document.getElementById("input").setAttribute("type", "button");
 
 5. Section 6
 
-- Contoh 1, mengubah warna teks menjadi warna hijau
+- Contoh 1, mengubah warna teks menjadi warna ungu
 
 ---
 
-## document.getElementById("hello").style.color = "green";
+## document.getElementById("hallo").style.color = "purple";
 
 - Contoh 2, menambah border pada image
 
@@ -190,46 +190,46 @@ console.log("Height of div element: " + styles.height);
 
 6. Section 7
 
-- Contoh 1, menambahkan event keydown. Saat menekan spasi maka akan muncu pop up dengan keterangan “Anda menekan tombol spasi!”
+- Contoh 1, menambahkan event keydown. Saat menekan spasi maka akan muncul pop up dengan keterangan “Anda telah menekan tombol spasi pada keyboard!”
 
 ---
 
 document.addEventListener("keydown", function(event) {
 if (event.code === "Space") {
-alert("Anda menekan tombol spasi!");
+alert("Anda telah menekan tombol spasi pada keyboard!");
 }
 });
 
 ---
 
-- Contoh 2, menambahkan event keydown. Saat menekan panah ke kanan maka background color akan berubah menjadi warna merah
+- Contoh 2, menambahkan event keydown. Saat menekan panah ke kanan pada keyboard maka background color akan berubah menjadi warna kuning
 
 ---
 
 document.addEventListener("keydown", function(event) {
 if (event.code === "ArrowRight") {
-document.getElementById("klikkanan").style.backgroundColor = "blue";
+document.getElementById("klikkanan").style.backgroundColor = "kuning";
 }
 });
 
 ---
 
-- Contoh 3, menambahkan event kliksaya. Saat di tekan maka background color akan berubah menjadi warna biru
+- Contoh 3, menambahkan event kliksaya. Saat di tekan maka background color akan berubah menjadi warna tomato
 
 ---
 
 document.getElementById("kliksaya").addEventListener("click", function() {
-this.style.backgroundColor = "blue";
+this.style.backgroundColor = "tomato";
 });
 
 ---
 
-- Contoh 4, menambahkan mouseover. Saat cursor di arahkan ke teks “Arahkan cursor mouse ke sini!”, maka akan muncul pop up dengan keterangan “Anda mengarahkan cursor mouse ke elemen ini!”.
+- Contoh 4, menambahkan mouseover. Saat cursor di arahkan ke teks “Arahkan cursor mouse disini!”, maka akan muncul pop up dengan keterangan “Anda mengarahkan cursor mouse pada bagian ini!”.
 
 ---
 
 document.getElementById("div").addEventListener("mouseover", function() {
-alert("Anda mengarahkan cursor mouse ke elemen ini!");
+alert("Anda mengarahkan cursor mouse pada bagian ini!");
 });
 
 ---
@@ -266,7 +266,7 @@ var radios = document.getElementsByName('color');
 for (var i = 0; i < radios.length; i++) {
 radios[i].addEventListener('change', function() {
 var selectedValue = document.querySelector('input[name="color"]:checked').value;
-console.log('Warna yang anda pilih:', selectedValue);
+console.log('Warna yang anda pilih adalah:', selectedValue);
 });
 }
 
